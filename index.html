@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Number Facts Generator</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Salsa">
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Number Facts Generator</h1>
+		
+		<form id="form-number-fact">
+			<label for="input-number">Enter a Number</label>
+			<input type="number" required placeholder="Enter a Number" id="input-number" class="input-number" autofocus>
+			<select class="select-type" id="select-type">
+				<option value="trivia">Trivia</option>
+				<option value="math">Math</option>
+				<option value="date">Date</option>
+				<option value="year">Year</option>
+			</select>
+			<button type="submit" class="btn-get-fact">Get Fact</button>
+		</form>
+		
+		<blockquote id="block-fact"></blockquote>
+	</div>
+	
+	<script src="app.js"></script>
+</body>
+</html>
